@@ -1,0 +1,103 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #2f3020;
+    background-image: url(./images/gradient.avif);
+}
+
+header {
+   /* background: #d96846;*/
+    color: #2f3020;
+    padding: 20px 0;
+    border-style: double; color: #333;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    /*color: #596235;*/
+    text-decoration:solid;
+}
+
+.home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home h1 {
+    font-size: 3em;
+    background-color: #cdcbd6;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    color:#cdcdcd;
+    /*background-color: #596235;*/
+}
+
+#projects .project {
+   /* background: #cdcbd6;*/
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #6e08e2;
+    
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #2f3020;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #d96846;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #cdcdcd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+img {
+    float: right;
+    width: 400px;
+    height: 400px;
+}
