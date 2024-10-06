@@ -12,6 +12,7 @@ header {
     color: #2f3020;
     padding: 20px 0;
     border-style: double; color: #333;
+
 }
 
 nav ul {
@@ -23,11 +24,14 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+    
 }
 
 nav ul li a {
     /*color: #596235;*/
     text-decoration:solid;
+    padding-right: 300px;
+    
 }
 
 .home {
