@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #59f3d2;
+    background-color: rgb(0,112,112);
 }
 
 header {
-    background-color: #a16305;
-    color: #d4ffee;
+    background-color:#D0AF91;
+    color: teal;
     padding: 1rem;
 }
 
@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f7ed96;
+    color: rgb(0,112,112);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 .heading q {
-    color: #555;
+    color: #070000;
     font-size: 1.2rem;
 }
 
@@ -101,9 +101,9 @@ p {
 .team section {
     margin: 20px 0;
     padding: 10px;
-    border: 1px solid #a16305;
+    border: 1px solid #D0AF91;
     border-radius: 8px;
-    background-color: #a16305;
+    background-color: #D0AF91;
     padding-left: 20px;
 }
 
@@ -219,7 +219,7 @@ img {
     background-color: #717171;
 }
 
-/* Footer */
+/* Footer
 footer {
     text-align: center;
     background-color: #333;
@@ -227,7 +227,7 @@ footer {
     padding: 10px 0;
     font-size: 18px;
     margin-top: 20px;
-}
+} */
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -272,3 +272,229 @@ footer {
     /* Ensures images fit the container without distortion */
 }
 
+/* General footer styling */
+footer {
+    background-color:#D0AF91;
+    /* Dark background */
+    color: rgb(0,112,112);
+    /* White text for contrast */
+    padding: 20px;
+    /* Space inside the footer */
+    text-align: center;
+    /* Centered text */
+    font-family: 'Arial', sans-serif;
+    /* Font style */
+    position: relative;
+    /* For positioning slides */
+    overflow: hidden;
+    /* Hide overflow for sliding effect */
+    height: 100px;
+    /* Fixed height */
+}
+
+/* Container for the contact items */
+#contact-container {
+    position: relative;
+    /* For absolute positioning of slides */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+}
+
+/* Individual contact slide styling */
+.contact-slide {
+    position: absolute;
+    /* Absolute positioning for sliding */
+    white-space: nowrap;
+    /* Prevent wrapping of text */
+    width: 100%;
+    /* Full width for each slide */
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Smooth transitions */
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+    font-size: 18px;
+    /* Font size for the text */
+    padding: 30px 0;
+    /* Vertical padding */
+}
+
+/* Active contact slide (visible) */
+.contact-slide.active {
+    transform: translateX(0);
+    /* Slide in */
+    opacity: 1;
+    /* Make visible */
+}
+
+/* Exiting slide (moving out to the left) */
+.contact-slide.exit {
+    transform: translateX(-100%);
+    /* Slide out to the left */
+    opacity: 0;
+    /* Make invisible */
+}
+
+/* Footer text styling */
+footer p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 18px;
+    /* Font size */
+    font-weight: 400;
+    /* Normal weight */
+    color: rgb(0,112,112);
+    /* White color */
+}
+#objectives {
+    background-color: #D0AF91;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#objectives p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#ol {
+    padding-left: 20px;
+}
+
+#ol li {
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #444;
+}
+
+/* Slideshow container styling */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 50px auto;
+}
+
+/* Hide all images by default */
+.mySlides {
+    display: none;
+}
+
+/* Style the image */
+.mySlides img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Style for the number text */
+.numbertext {
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.text {
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Next and previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Add hover effects for the buttons */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dot indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.active {
+    background-color: #717171;
+}
+
+/* Fade animation for slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Footer styling
+ footer {
+     text-align: center;
+     margin-top: 30px;
+     padding: 10px;
+     background-color: #0066cc;
+     color: #fff;
+     font-size: 18px;
+ } */
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+
+    .prev,
+    .next {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}

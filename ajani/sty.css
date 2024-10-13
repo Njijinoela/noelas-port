@@ -1,0 +1,149 @@
+ #objectives {
+     background-color: #D0AF91;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     padding: 30px;
+     max-width: 900px;
+     margin: 20px auto;
+ }
+
+ #objectives p {
+     font-size: 18px;
+     color: #333;
+     margin-bottom: 15px;
+     line-height: 1.6;
+ }
+
+ #ol {
+     padding-left: 20px;
+ }
+
+ #ol li {
+     margin-bottom: 12px;
+     font-size: 17px;
+     color: #444;
+ }
+
+ /* Slideshow container styling */
+ .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: 50px auto;
+ }
+
+ /* Hide all images by default */
+ .mySlides {
+     display: none;
+ }
+
+ /* Style the image */
+ .mySlides img {
+     border-radius: 10px;
+     max-width: 100%;
+ }
+
+ /* Style for the number text */
+ .numbertext {
+     color: #fff;
+     font-size: 14px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+ }
+
+ /* Caption text */
+ .text {
+     color: #fff;
+     font-size: 20px;
+     padding: 16px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+     background: rgba(0, 0, 0, 0.4);
+ }
+
+ /* Next and previous buttons */
+ .prev,
+ .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+ }
+
+ /* Position the next button to the right */
+ .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+ }
+
+ /* Add hover effects for the buttons */
+ .prev:hover,
+ .next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* Dot indicators */
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ /* Active dot */
+ .active {
+     background-color: #717171;
+ }
+
+ /* Fade animation for slides */
+ .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+
+ @keyframes fade {
+     from {
+         opacity: 0.4
+     }
+
+     to {
+         opacity: 1
+     }
+ }
+
+ /* Footer styling
+ footer {
+     text-align: center;
+     margin-top: 30px;
+     padding: 10px;
+     background-color: #0066cc;
+     color: #fff;
+     font-size: 18px;
+ } */
+
+ /* Responsive design for mobile */
+ @media (max-width: 768px) {
+
+     .prev,
+     .next {
+         font-size: 14px;
+     }
+
+     .text {
+         font-size: 16px;
+     }
+ }
